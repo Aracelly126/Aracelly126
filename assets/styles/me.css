@@ -13,7 +13,7 @@
 
 .me__container {
   display: flex;
-  height: 100dvh;
+  min-height: 100vh;
   width: 85%;
   align-items: center;
   justify-content: space-evenly;
