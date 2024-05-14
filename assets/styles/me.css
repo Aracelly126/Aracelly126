@@ -50,21 +50,24 @@
   animation: text-blur 1.4s cubic-bezier(0.55, 0.083, 0.68, 0.53) 0.1s both;
 }
 
-.me__social {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 25px;
+#me .social-links {
+  width: 100%;
+  margin: auto;
 }
 
-.me__icon {
-  font-size: calc(var(--subtitles) - 0.5rem);
-  filter: invert(1) saturate(0);
+#me .social-links a {
+  font-size: 24px;
+  display: inline-block;
+  color: #45505b;
+  line-height: 1;
+  margin-right: 20px;
+  transition: 0.3s;
 }
 
-.me__icon:hover {
-  transform: scale(1.2);
+#me .social-links a:hover {
+  color: var(--primary-color);
 }
+
 
 
 @media screen and (max-width: 768px) {

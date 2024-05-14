@@ -23,7 +23,14 @@
     align-content: center;
 }
 
+.bi.bi-list.mobile-nav-toggle.d-lg-none{
+    display: none;
+}
+
 @media (max-width: 991px) {
+    .bi.bi-list.mobile-nav-toggle.d-lg-none{
+        display: block;
+    }
     #header {
         width: 300px;
         background: #fff;
@@ -161,6 +168,6 @@
   
   .mobile-nav-active .mobile-nav-toggle {
     color: #fff;
-    background-color: #e106e9;
+    background-color: var(--primary-color);
   }
   
