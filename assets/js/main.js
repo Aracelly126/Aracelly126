@@ -7,6 +7,24 @@
 */
 
 (function() {
+
+  const username = 'Aracelly126';
+  fetch(`https://api.github.com/users/${username}`)
+      .then(response => response.json())
+      .then(data => {
+          const profilePictureUrl = data.avatar_url;
+          const profilePictureContainer = document.getElementById('profile-picture-container');
+          const img = document.createElement('img');
+          img.src = profilePictureUrl;
+          img.alt = 'Foto de perfil de GitHub';
+          profilePictureContainer.appendChild(img);
+      })
+      .catch(error => {
+          console.error('Error al obtener la foto de perfil:', error);
+      });
+
+
+
     "use strict";
   
     /**
