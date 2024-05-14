@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foto de perfil de GitHub</title>
+</head>
+<body>
+    <h1>Foto de perfil de GitHub</h1>
+    <div id="profile-picture-container">
+        <!-- La imagen de perfil se cargará aquí -->
+    </div>
+
+    <script>
+        const username = 'Aracelly126';
+        fetch(`https://api.github.com/users/${username}`)
+            .then(response => response.json())
+            .then(data => {
+                const profilePictureUrl = data.avatar_url;
+                const profilePictureContainer = document.getElementById('profile-picture-container');
+                const img = document.createElement('img');
+                img.src = profilePictureUrl;
+                img.alt = 'Foto de perfil de GitHub';
+                profilePictureContainer.appendChild(img);
+            })
+            .catch(error => {
+                console.error('Error al obtener la foto de perfil:', error);
+            });
+    </script>
+</body>
+</html>
