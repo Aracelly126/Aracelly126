@@ -252,7 +252,7 @@
 
     </main>
     <script>
-        async function fillPortfolio() {
+         async function fillPortfolio() {
         const response = await fetch('https://api.github.com/users/Aracelly126/repos');
         let repos = await response.json();
 
@@ -283,9 +283,13 @@
             const pDate = document.createElement('p');
             pDate.classList.add('date','mb-0', 'text-right');
             pDate.textContent = new Date(repo.created_at).getFullYear();
-
+            
             const pDescription = document.createElement('p');
             pDescription.textContent = repo.description;
+            
+            const pLastUpdated = document.createElement('p');
+            pLastUpdated.classList.add('ultimo');
+            pLastUpdated.textContent = `Last Updated: ${new Date(repo.updated_at).toLocaleDateString()}`;
 
             const repoLink = document.createElement('a');
             repoLink.textContent = 'View on GitHub ';
@@ -302,6 +306,7 @@
             titleContainer.appendChild(pDate);
             cardBody.appendChild(titleContainer);
             cardBody.appendChild(pDescription);
+            cardBody.appendChild(pLastUpdated);
             cardBody.appendChild(repoLink);
             card.appendChild(cardBody);
             timelineItem.appendChild(card);
