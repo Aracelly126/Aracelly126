@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 1rem;
+}
+
+:root {
+  --primary-color:rgb(112, 20, 240);
+  --secundary-color:rgb(181, 150, 226);
+  --background: black;
+  --shadow-blue: drop-shadow(1px 0px 15px rgb(181, 150, 226));
+  --background-color: #252525;
+  --gray-color: #414141;
+  --gradient-blue: linear-gradient(145deg, rgb(0, 0, 0) 10%, rgb(0, 5, 36) 90%);
+  --gradient-text: linear-gradient(
+    45deg,
+    var(--primary-color) 20%,
+    var(--secundary-color) 80%
+  );
+  /* textos */
+  --text-ligth: rgb(112, 20, 240);
+  --titles: "Montserrat", sans-serif;
+  --text-content: "Montserrat", sans-serif;
+  --text-hiligths: "Fira Code", monospace;
+  --title-size: 5rem;
+  --subtitles: 2rem;
+  --middle-size: 1rem;
+  --descriptions: 3rem;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: var(--background);
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+.text__gradient {
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+
+.section-title {
+  text-align: center;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+
+}
+
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: var(--primary-color);
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
