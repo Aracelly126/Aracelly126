@@ -7,6 +7,8 @@
 }
 
 :root {
+  --primary-color:rgb(112, 20, 240);
+  --secundary-color:rgb(181, 150, 226);
   --background: black;
   --shadow-blue: drop-shadow(1px 0px 15px rgb(181, 150, 226));
   --background-color: #252525;
@@ -14,8 +16,8 @@
   --gradient-blue: linear-gradient(145deg, rgb(0, 0, 0) 10%, rgb(0, 5, 36) 90%);
   --gradient-text: linear-gradient(
     45deg,
-    rgb(112, 20, 240) 20%,
-    rgb(181, 150, 226) 80%
+    var(--primary-color) 20%,
+    var(--secundary-color) 80%
   );
   /* textos */
   --text-ligth: rgb(112, 20, 240);
