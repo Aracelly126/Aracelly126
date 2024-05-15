@@ -37,13 +37,11 @@ I'm Aracelly, a student of software engineering in the process of formation. I h
 
 ---
 
-[![](https://visitcount.itsvg.in/api?id=Aracelly126&icon=5&color=11)](https://visitcount.itsvg.in)
-
 <br clear="both">
 
 <img src="snake.svg" alt="Snake animation" />
 
-
+[![](https://visitcount.itsvg.in/api?id=Aracelly126&icon=5&color=11)](https://visitcount.itsvg.in)
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
 
 
