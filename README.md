@@ -5,7 +5,7 @@
 
 
 <p align="center" dir="auto">
-I'm Aracelly, a student of software engineering in the process of formation. I have knowledge in backend development, especially in technologies like Python, Go, Java, C++, and R. Recently, I have started to explore the world of frontend development and interface design. I am committed to technical excellence and continuous improvement, and I am looking for opportunities to collaborate on innovative and challenging projects.
+I'm Aracelly, a student of software engineering in the process of formation. I specialize in frontend development, working with technologies like React, Vite, and Flutter. I also have experience with Python and PyCharm, which support my development workflow. I am committed to technical excellence and continuous improvement, and I am looking for opportunities to collaborate on innovative and challenging projects.
 </p>
 <p align="center" dir="auto">
 <img align="center" alt="Coding" width="400" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExb21nMG5kcmU2dDR5MGlzM2NrOGp2czV4dG9vNG1obWh6Z28xNWwxNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/paTz7UZbPfTZFRYnnB/giphy.gif">
